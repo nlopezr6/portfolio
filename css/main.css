@@ -1,6 +1,6 @@
  
 *{
-  border: 1px dotted blue;
+  /*border: 1px dotted blue;*/
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -13,10 +13,14 @@ body {
 
 /** Header */
 
+
+
 .container {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .logo {
@@ -24,7 +28,7 @@ body {
     font-weight: 600;
 }
 
-nav.navbar {
+.navbar {
     display: none;
 }
 
@@ -34,5 +38,33 @@ ul.main-menu {
     margin: 0;
 }
 
+@media ( min-width: 768px ) {
+    .Hamburguer-icon {
+        display: none;
+    }
+    .navbar {
+        display: block;
+    }
+
+}
+
+.header {
+    background-color: yellowgreen;
+}
 
 
+
+@media ( min-width: 567px ) {      /**Breapoint 567 */
+    .header {
+        background-color: green;
+    }
+}
+
+
+
+@media ( orientation: landscape ) {
+    .header {
+        background-color: darkcyan;
+    }
+    
+}
