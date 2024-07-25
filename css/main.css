@@ -1,4 +1,5 @@
 :root {
+    /**Colors */
     --anti-flash-white: #F3F3F3;
     --black: #000000;
     --charleston-green-v1: #2D2D2D;
@@ -30,12 +31,17 @@
       color: #aa0909;
   }
   .container {
+       width: 90%;
+      margin: 0 auto;
+  }
+
+.logo-navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 90%;
       margin: 26px auto;
-  }
+}
+
   .logo {
       font-size: 20px;
       font-weight: 600;
@@ -52,9 +58,7 @@
       align-items: center;
       gap: .5rem;
   }
-  main.main {
-      background-color: #F9E6F0;
-  }
+ 
   
   @media ( min-width: 768px ) {
       .hamburger-icon {
@@ -65,3 +69,10 @@
       }
   
   }
+
+/** Main: section Bio*/
+.bio {
+    background-color: var(--pink-lace);
+}
+
+
