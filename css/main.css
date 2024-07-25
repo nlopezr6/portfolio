@@ -1,70 +1,67 @@
- 
-*{
-  /*border: 1px dotted blue;*/
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+:root {
+    --anti-flash-white: #F3F3F3;
+    --black: #000000;
+    --charleston-green-v1: #2D2D2D;
+    --charleston-green-v2: #2B2B2B;
+    --paolo-veronese-green: #009379;
+    --piggy-pink: #F6DCE9;
+    --pink-lace: #F9E6F0;
+    --white: #ffffff;
 
-body {
-    font-family: "Epilogue", sans-serif;
+    /**/
+    --color-menu-link: var( --charleston-green-v1);
+}
     
-}
+ * {
 
-/** Header */
-
-
-
-.container {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.logo {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.navbar {
-    display: none;
-}
-
-ul.main-menu {
-    list-style: none;
     padding: 0;
     margin: 0;
-}
-
-@media ( min-width: 768px ) {
-    .Hamburguer-icon {
-        display: none;
-    }
-    .navbar {
-        display: block;
-    }
-
-}
-
-.header {
-    background-color: yellowgreen;
-}
-
-
-
-@media ( min-width: 567px ) {      /**Breapoint 567 */
-    .header {
-        background-color: green;
-    }
-}
-
-
-
-@media ( orientation: landscape ) {
-    .header {
-        background-color: darkcyan;
-    }
-    
-}
+    box-sizing: border-box;
+  }
+  body {
+      font-family: "Epilogue", sans-serif;
+  }
+  /** header */
+  .menu-item a {
+      text-decoration: none;
+      color: var( --color-menu-link)
+  }
+  .menu-item a:hover {
+      color: #aa0909;
+  }
+  .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 26px auto;
+  }
+  .logo {
+      font-size: 20px;
+      font-weight: 600;
+  }
+  nav.navbar {
+      display: none;
+  }
+  ul.main-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: .5rem;
+  }
+  main.main {
+      background-color: #F9E6F0;
+  }
+  
+  @media ( min-width: 768px ) {
+      .hamburger-icon {
+          display: none;
+      }
+      nav.navbar {
+          display: block;
+      }
+  
+  }
