@@ -1,0 +1,30 @@
+@media ( min-width: 768px ) {
+    .hamburger-icon {
+        display: none;
+    }
+    .navbar {
+        display: block;
+    }
+
+
+/** Main: Section Bio */
+
+    .bio-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 60%;
+        padding: 7rem 0;
+    }
+    .biography {
+        margin-top: initial;
+    }
+    .container.description-content {
+        width: 70%;
+    }
+
+    .footer-content {
+        flex-direction: row;
+    }
+}

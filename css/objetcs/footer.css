@@ -1,0 +1,26 @@
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-top: 3px solid var(--anti-flash-white);
+    padding: 3rem 0;
+}
+
+.lets-work {
+    flex-basis: 30%;
+}
+.lets-work h2 {
+    margin-bottom: 2.4rem;
+    font-size: 3.2rem;
+}
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    gap: .5rem;
+    margin: 2.4rem 0;
+}
+
+.contact {
+    flex-basis: 50%;
+}

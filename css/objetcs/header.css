@@ -1,0 +1,36 @@
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: var( --color-menu-link );
+    font-size: 1.7rem;
+}
+.menu-item a:hover {
+    color: gray;
+}
+
+
+.logo-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 26px auto;
+}
+
+.navbar {
+    display: none;
+}
+
+.main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.7rem;
+}

@@ -1,0 +1,28 @@
+.form-input { 
+    width: 100%;
+    height: var( --height-input );
+    padding: 25px;
+    margin-bottom: 1rem;
+    background-color: var( --anti-flash-white );
+    border: none;
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 1.7rem;
+}
+input:-moz-placeholder {
+    font-size: 1.7rem;
+}
+input::-moz-placeholder {
+    font-size: 1.7rem;
+}
+input::-ms-input-placeholder {
+    font-size: 1.7rem;
+}
+
+textarea.form-input {
+    height: calc( var( --height-input ) * 3 );
+    resize: none;
+}
+

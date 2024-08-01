@@ -1,256 +1,32 @@
-:root {
-    /** Colors */
-    --anti-flash-white: #F3F3F3;
-    --black: #000000;
-    --charleston-green-v1: #2D2D2D;
-    --charleston-green-v2: #2B2B2B;
-    --paolo-veronese-green: #009379;
-    --piggy-pink: #F6DCE9;
-    --pink-lace: #F9E6F0;
-    --white: #ffffff;
+@import './settings/variables.css';
+/**@import './tools/';*/
+@import './generic/normalize.css';
+@import './elements/elements.css';
+@import './objetcs/objects.css';
+@import './components/components.css';
+/**@import './utilities/'*/
 
-    /**Formulario*/
-    --height-input: 69px;
 
-    /**Enlaces*/
-    --color-menu-link: var( --charleston-green-v1 );
 
-    /***/
-    --overall-font-size: 62.5%;
-}
 
-* {
-    /* border: 1px dotted blue; */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-html {
-    font-size: var(--overall-font-size);    /** 1rem = 10px*/
-}
-body {
-    font-family: "Epilogue", sans-serif;
-    font-size: 1.6rem;                      /** 16px */
-}
 
-p {
-    line-height: 1.4;
-    font-size: 1.7rem;
-}
 
 /** Header */
-#logo {
-    font-size: 2rem;
-    font-weight: 600;
-}
 
-.menu-item a {
-    text-decoration: none;
-    color: var( --color-menu-link );
-    font-size: 1.7rem;
-}
-.menu-item a:hover {
-    color: gray;
-}
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-}
 
-.logo-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 26px auto;
-}
 
-.navbar {
-    display: none;
-}
-
-ul.main-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: .5rem;
-    font-size: 1.7rem;
-}
-
-@media ( min-width: 768px ) {
-    .hamburger-icon {
-        display: none;
-    }
-    .navbar {
-        display: block;
-    }
-}
-
-/** Main: Section Bio */
-.bio {
-    background-color: var( --pink-lace);
-    font-size: 1.7rem;
-}
-.bio-content {
-    padding: 4.8rem 0;
-}
-.avatar-name {
-    font-size: 17px;
-    margin: 1.2rem 0;
-}
-span.name\.designer {
-    display: block;
-    text-decoration: underline;
-}
-.profession {
-    font-weight: normal;
-}
-.biography {
-    margin-top: 6rem;
-    font-size: 1.7rem;
-}
-.biography strong {
-    font-size: 1.7rem;
-}
-
-@media ( min-width: 768px ) {
-    .bio-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2rem;
-        width: 60%;
-        padding: 7rem 0;
-    }
-    .biography {
-        margin-top: initial;
-    }
-    .container.description-content {
-        width: 70%;
-    }
-}
 
 /** Main: Section Story */
-.description-content {
-    padding: 5rem 0;
-}
 
-.description-content h2 {
-    font-size: 2.4rem;
-}
-
-.description-content p  {
-    font-size: 1.6rem;
-}
-
-.description-content *:first-child {
-    margin-bottom: 2.5rem;
-    font-weight: normal;
-    line-height: 1.7;
-}
-.description-content p {
-    line-height: 1.7;
-}
-
-/** Inicio: Forma 1*/
-/* .description-content *:nth-child( even ) {
-    background: #009379;
-}
-.description-content *:last-child {
-    background: #FFFFFF;
-} */
-/** Fin: Forma 1 */
-/** Inicio: Forma 2 */
-/* .description-content *:nth-child(2),
-.description-content *:nth-child(4) {
-    background: blue;
-} */
-
-/* Selecciona cada elemento hijo par excepto el Ãºltimo */
-.description-content *:nth-child(2n):not(:nth-last-child(1)) {
-    background-color: var(--paolo-veronese-green); 
-    color: var(--piggy-pink);
-    font-weight: 600;
-
-    /* Cambia esto al color de fondo que prefieras */
-}
 /** Fin: Forma 2 */
 
 /** Footer */
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    border-top: 3px solid var(--anti-flash-white);
-    padding: 3rem 0;
-}
-
-input::-webkit-input-placeholder {
-    font-size: 1.7rem;
-}
-input:-moz-placeholder {
-    font-size: 1.7rem;
-}
-input::-moz-placeholder {
-    font-size: 1.7rem;
-}
-input::-ms-input-placeholder {
-    font-size: 1.7rem;
-}
-
-@media ( min-width: 768px ) {
-    .footer-content {
-        flex-direction: row;
-    }
-}
 
 
-.lets-work {
-    flex-basis: 30%;
-}
-.lets-work h2 {
-    margin-bottom: 2.4rem;
-    font-size: 3.2rem;
-}
-ul.social-media {
-    list-style: none;
-    display: flex;
-    justify-content: left;
-    gap: .5rem;
-    margin: 2.4rem 0;
-}
 
-.contact {
-    flex-basis: 50%;
-}
 
-.form-input { 
-    width: 100%;
-    height: var( --height-input );
-    padding: 25px;
-    margin-bottom: 1rem;
-    background-color: var( --anti-flash-white );
-    border: none;
-    outline: none;
-}
 
-.btn {
-    width: 235px;
-    display: inline-block;
-    padding: 25px 85px;
-    border: 1px solid transparent;
-    margin: 1.6rem 0;
-}
-.btn--bg-black {
-    background-color: var( --black );
-    color: var( --white );
-    font-weight: bold;
-}
 
-textarea.form-input {
-    height: calc( var( --height-input ) * 3 );
-    resize: none;
-}
+
+
